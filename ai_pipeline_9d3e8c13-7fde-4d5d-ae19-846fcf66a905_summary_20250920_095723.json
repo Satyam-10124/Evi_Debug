@@ -1,0 +1,170 @@
+{
+  "job_id": "ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905",
+  "logs": {
+    "ok": true,
+    "data": {
+      "id": "ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905",
+      "count": 13,
+      "logs": [
+        {
+          "t": 1758361435783,
+          "level": "info",
+          "msg": "Pipeline started. Network=basecamp, maxIters=5, file=SimpleLottery.sol, strictArgs=true"
+        },
+        {
+          "t": 1758361435783,
+          "level": "info",
+          "msg": "Stage: generate -> prompt preparation"
+        },
+        {
+          "t": 1758361435783,
+          "level": "debug",
+          "msg": "Enhanced prompt length=970"
+        },
+        {
+          "t": 1758361505796,
+          "level": "info",
+          "msg": "Generation done in 70013ms. Code size=5511"
+        },
+        {
+          "t": 1758361505796,
+          "level": "info",
+          "msg": "Stage: write -> preparing sandbox and files"
+        },
+        {
+          "t": 1758361505796,
+          "level": "info",
+          "msg": "Stage: compile -> starting compile/fix loop"
+        },
+        {
+          "t": 1758361507327,
+          "level": "error",
+          "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol\n\n\n"
+        },
+        {
+          "t": 1758361507327,
+          "level": "error",
+          "msg": "TypeError: Type address is not implicitly convertible to expected type address payable.\n   --> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol:115:18:\n    |\n115 |         winner = address(0);\n    |                  ^^^^^^^^^^\n\n\n"
+        },
+        {
+          "t": 1758361507338,
+          "level": "error",
+          "msg": "Error HH600: Compilation failed\n"
+        },
+        {
+          "t": 1758361507339,
+          "level": "info",
+          "msg": "\n"
+        },
+        {
+          "t": 1758361507339,
+          "level": "error",
+          "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+        },
+        {
+          "t": 1758361507362,
+          "level": "warn",
+          "msg": "Compile failed (iter 0). Running AI fix. Error length=1729"
+        },
+        {
+          "t": 1758361507362,
+          "level": "error",
+          "msg": "Pipeline failed: context is not defined"
+        }
+      ]
+    }
+  },
+  "status": {
+    "ok": true,
+    "data": {
+      "id": "ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905",
+      "type": "ai_pipeline",
+      "state": "failed",
+      "progress": 100,
+      "createdAt": 1758361435782,
+      "updatedAt": 1758361507362,
+      "payload": {
+        "prompt": "SimpleLottery: EMPTY CONSTRUCTOR. buyTicket() payable. drawWinner() onlyOwner. winner claimPrize(). Events: TicketBought, WinnerDrawn, PrizeClaimed. No constructor args.",
+        "network": "basecamp",
+        "maxIters": 5,
+        "providedName": "",
+        "filename": "SimpleLottery.sol",
+        "constructorArgs": [],
+        "strictArgs": true
+      },
+      "result": null,
+      "error": "context is not defined",
+      "logs": [
+        {
+          "t": 1758361435783,
+          "level": "info",
+          "msg": "Pipeline started. Network=basecamp, maxIters=5, file=SimpleLottery.sol, strictArgs=true"
+        },
+        {
+          "t": 1758361435783,
+          "level": "info",
+          "msg": "Stage: generate -> prompt preparation"
+        },
+        {
+          "t": 1758361435783,
+          "level": "debug",
+          "msg": "Enhanced prompt length=970"
+        },
+        {
+          "t": 1758361505796,
+          "level": "info",
+          "msg": "Generation done in 70013ms. Code size=5511"
+        },
+        {
+          "t": 1758361505796,
+          "level": "info",
+          "msg": "Stage: write -> preparing sandbox and files"
+        },
+        {
+          "t": 1758361505796,
+          "level": "info",
+          "msg": "Stage: compile -> starting compile/fix loop"
+        },
+        {
+          "t": 1758361507327,
+          "level": "error",
+          "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol\n\n\n"
+        },
+        {
+          "t": 1758361507327,
+          "level": "error",
+          "msg": "TypeError: Type address is not implicitly convertible to expected type address payable.\n   --> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol:115:18:\n    |\n115 |         winner = address(0);\n    |                  ^^^^^^^^^^\n\n\n"
+        },
+        {
+          "t": 1758361507338,
+          "level": "error",
+          "msg": "Error HH600: Compilation failed\n"
+        },
+        {
+          "t": 1758361507339,
+          "level": "info",
+          "msg": "\n"
+        },
+        {
+          "t": 1758361507339,
+          "level": "error",
+          "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+        },
+        {
+          "t": 1758361507362,
+          "level": "warn",
+          "msg": "Compile failed (iter 0). Running AI fix. Error length=1729"
+        },
+        {
+          "t": 1758361507362,
+          "level": "error",
+          "msg": "Pipeline failed: context is not defined"
+        }
+      ],
+      "step": "fix",
+      "lastErrors": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol\n\n\nTypeError: Type address is not implicitly convertible to expected type address payable.\n   --> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol:115:18:\n    |\n115 |         winner = address(0);\n    |                  ^^^^^^^^^^\n\n\nError HH600: Compilation failed\nHardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n\n\n"
+    }
+  },
+  "logs_status_code": 200,
+  "status_status_code": 200
+}

@@ -1,0 +1,682 @@
+[
+  {
+    "job_id": "ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2",
+    "logs": {
+      "ok": true,
+      "data": {
+        "id": "ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2",
+        "count": 13,
+        "logs": [
+          {
+            "t": 1758360652800,
+            "level": "info",
+            "msg": "Pipeline started. Network=basecamp, maxIters=5, file=BadgeRegistry.sol, strictArgs=true"
+          },
+          {
+            "t": 1758360652801,
+            "level": "info",
+            "msg": "Stage: generate -> prompt preparation"
+          },
+          {
+            "t": 1758360652801,
+            "level": "debug",
+            "msg": "Enhanced prompt length=2977"
+          },
+          {
+            "t": 1758360794330,
+            "level": "info",
+            "msg": "Generation done in 141529ms. Code size=20911"
+          },
+          {
+            "t": 1758360794330,
+            "level": "info",
+            "msg": "Stage: write -> preparing sandbox and files"
+          },
+          {
+            "t": 1758360794330,
+            "level": "info",
+            "msg": "Stage: compile -> starting compile/fix loop"
+          },
+          {
+            "t": 1758360796139,
+            "level": "error",
+            "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol\n\n\nWarning: This declaration has the same name as another declaration.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:346:9:\n    |\n346 |         uint256 stake = auditorStakes[auditor];\n    |         ^^^^^^^^^^^^^\nNote: The other declaration is here:\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:315:5:\n    |\n315 |     function stake() external whenNotPaused nonReentrant {\n    |     ^ (Relevant source part starts here and spans across multiple lines).\n\n\n"
+          },
+          {
+            "t": 1758360796140,
+            "level": "error",
+            "msg": "TypeError: Function has override specified but does not override anything.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:556:9:\n    |\n556 |         override(ERC721)\n    |         ^^^^^^^^^^^^^^^^\n\n\nTypeError: Invalid contract specified in override list: \"ERC721\".\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:556:9:\n    |\n556 |         override(ERC721)\n    |         ^^^^^^^^^^^^^^^^\nNote: This contract: \n  --> @openzeppelin/contracts/token/ERC721/ERC721.sol:19:1:\n   |\n19 | contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {\n   | ^ (Relevant source part starts here and spans across multiple lines).\n\n\nTypeError: Wrong argument count for function call: 3 arguments given but expected 4.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:558:9:\n    |\n558 |         super._beforeTokenTransfer(from, to, tokenId);\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758360796150,
+            "level": "error",
+            "msg": "Error HH600: Compilation failed\n"
+          },
+          {
+            "t": 1758360796151,
+            "level": "info",
+            "msg": "\n"
+          },
+          {
+            "t": 1758360796151,
+            "level": "error",
+            "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+          },
+          {
+            "t": 1758360796176,
+            "level": "warn",
+            "msg": "Compile failed (iter 0). Running AI fix. Error length=3010"
+          },
+          {
+            "t": 1758360796176,
+            "level": "error",
+            "msg": "Pipeline failed: context is not defined"
+          }
+        ]
+      }
+    },
+    "status": {
+      "ok": true,
+      "data": {
+        "id": "ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2",
+        "type": "ai_pipeline",
+        "state": "failed",
+        "progress": 100,
+        "createdAt": 1758360652800,
+        "updatedAt": 1758360796176,
+        "payload": {
+          "prompt": "BadgeRegistry: EMPTY CONSTRUCTOR. issueBadge(address user,string uri) onlyOwner. revokeBadge(uint256 id) onlyOwner. Non-transferable. Events: Issued, Revoked. No constructor args.",
+          "network": "basecamp",
+          "maxIters": 5,
+          "providedName": "",
+          "filename": "BadgeRegistry.sol",
+          "constructorArgs": [],
+          "strictArgs": true
+        },
+        "result": null,
+        "error": "context is not defined",
+        "logs": [
+          {
+            "t": 1758360652800,
+            "level": "info",
+            "msg": "Pipeline started. Network=basecamp, maxIters=5, file=BadgeRegistry.sol, strictArgs=true"
+          },
+          {
+            "t": 1758360652801,
+            "level": "info",
+            "msg": "Stage: generate -> prompt preparation"
+          },
+          {
+            "t": 1758360652801,
+            "level": "debug",
+            "msg": "Enhanced prompt length=2977"
+          },
+          {
+            "t": 1758360794330,
+            "level": "info",
+            "msg": "Generation done in 141529ms. Code size=20911"
+          },
+          {
+            "t": 1758360794330,
+            "level": "info",
+            "msg": "Stage: write -> preparing sandbox and files"
+          },
+          {
+            "t": 1758360794330,
+            "level": "info",
+            "msg": "Stage: compile -> starting compile/fix loop"
+          },
+          {
+            "t": 1758360796139,
+            "level": "error",
+            "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol\n\n\nWarning: This declaration has the same name as another declaration.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:346:9:\n    |\n346 |         uint256 stake = auditorStakes[auditor];\n    |         ^^^^^^^^^^^^^\nNote: The other declaration is here:\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:315:5:\n    |\n315 |     function stake() external whenNotPaused nonReentrant {\n    |     ^ (Relevant source part starts here and spans across multiple lines).\n\n\n"
+          },
+          {
+            "t": 1758360796140,
+            "level": "error",
+            "msg": "TypeError: Function has override specified but does not override anything.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:556:9:\n    |\n556 |         override(ERC721)\n    |         ^^^^^^^^^^^^^^^^\n\n\nTypeError: Invalid contract specified in override list: \"ERC721\".\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:556:9:\n    |\n556 |         override(ERC721)\n    |         ^^^^^^^^^^^^^^^^\nNote: This contract: \n  --> @openzeppelin/contracts/token/ERC721/ERC721.sol:19:1:\n   |\n19 | contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {\n   | ^ (Relevant source part starts here and spans across multiple lines).\n\n\nTypeError: Wrong argument count for function call: 3 arguments given but expected 4.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:558:9:\n    |\n558 |         super._beforeTokenTransfer(from, to, tokenId);\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758360796150,
+            "level": "error",
+            "msg": "Error HH600: Compilation failed\n"
+          },
+          {
+            "t": 1758360796151,
+            "level": "info",
+            "msg": "\n"
+          },
+          {
+            "t": 1758360796151,
+            "level": "error",
+            "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+          },
+          {
+            "t": 1758360796176,
+            "level": "warn",
+            "msg": "Compile failed (iter 0). Running AI fix. Error length=3010"
+          },
+          {
+            "t": 1758360796176,
+            "level": "error",
+            "msg": "Pipeline failed: context is not defined"
+          }
+        ],
+        "step": "fix",
+        "lastErrors": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol\n\n\nWarning: This declaration has the same name as another declaration.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:346:9:\n    |\n346 |         uint256 stake = auditorStakes[auditor];\n    |         ^^^^^^^^^^^^^\nNote: The other declaration is here:\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:315:5:\n    |\n315 |     function stake() external whenNotPaused nonReentrant {\n    |     ^ (Relevant source part starts here and spans across multiple lines).\n\n\nTypeError: Function has override specified but does not override anything.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:556:9:\n    |\n556 |         override(ERC721)\n    |         ^^^^^^^^^^^^^^^^\n\n\nTypeError: Invalid contract specified in override list: \"ERC721\".\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:556:9:\n    |\n556 |         override(ERC721)\n    |         ^^^^^^^^^^^^^^^^\nNote: This contract: \n  --> @openzeppelin/contracts/token/ERC721/ERC721.sol:19:1:\n   |\n19 | contract ERC721 is Context, ERC165, IERC721, IERC721Metadata {\n   | ^ (Relevant source part starts here and spans across multiple lines).\n\n\nTypeError: Wrong argument count for function call: 3 arguments given but expected 4.\n   --> contracts/AI_ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2_BadgeRegistry.sol:558:9:\n    |\n558 |         super._beforeTokenTransfer(from, to, tokenId);\n    |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n\nError HH600: Compilation failed\nHardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n\n\n"
+      }
+    },
+    "logs_status_code": 200,
+    "status_status_code": 200
+  },
+  {
+    "job_id": "ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b",
+    "logs": {
+      "ok": true,
+      "data": {
+        "id": "ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b",
+        "count": 12,
+        "logs": [
+          {
+            "t": 1758360798935,
+            "level": "info",
+            "msg": "Pipeline started. Network=basecamp, maxIters=5, file=ContentRegistry.sol, strictArgs=true"
+          },
+          {
+            "t": 1758360798935,
+            "level": "info",
+            "msg": "Stage: generate -> prompt preparation"
+          },
+          {
+            "t": 1758360798935,
+            "level": "debug",
+            "msg": "Enhanced prompt length=2968"
+          },
+          {
+            "t": 1758360879790,
+            "level": "info",
+            "msg": "Generation done in 80855ms. Code size=20830"
+          },
+          {
+            "t": 1758360879790,
+            "level": "info",
+            "msg": "Stage: write -> preparing sandbox and files"
+          },
+          {
+            "t": 1758360879791,
+            "level": "info",
+            "msg": "Stage: compile -> starting compile/fix loop"
+          },
+          {
+            "t": 1758360882384,
+            "level": "error",
+            "msg": "CompilerError: Stack too deep. Try compiling with `--via-ir` (cli) or the equivalent `viaIR: true` (standard JSON) while enabling the optimizer. Otherwise, try removing local variables.\n   --> contracts/AI_ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b_ContentRegistry.sol:311:38:\n    |\n311 |         if (!hasRole(SUBMITTER_ROLE, submitter)) {\n    |                                      ^^^^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758360882394,
+            "level": "error",
+            "msg": "Error HH600: Compilation failed\n"
+          },
+          {
+            "t": 1758360882395,
+            "level": "info",
+            "msg": "\n"
+          },
+          {
+            "t": 1758360882395,
+            "level": "error",
+            "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+          },
+          {
+            "t": 1758360882418,
+            "level": "warn",
+            "msg": "Compile failed (iter 0). Running AI fix. Error length=1485"
+          },
+          {
+            "t": 1758360882418,
+            "level": "error",
+            "msg": "Pipeline failed: context is not defined"
+          }
+        ]
+      }
+    },
+    "status": {
+      "ok": true,
+      "data": {
+        "id": "ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b",
+        "type": "ai_pipeline",
+        "state": "failed",
+        "progress": 100,
+        "createdAt": 1758360798935,
+        "updatedAt": 1758360882418,
+        "payload": {
+          "prompt": "ContentRegistry: EMPTY CONSTRUCTOR. registerContent(bytes32 hash,string uri). updateContent(uint256 id,string newUri). Events: Registered, Updated. No constructor args.",
+          "network": "basecamp",
+          "maxIters": 5,
+          "providedName": "",
+          "filename": "ContentRegistry.sol",
+          "constructorArgs": [],
+          "strictArgs": true
+        },
+        "result": null,
+        "error": "context is not defined",
+        "logs": [
+          {
+            "t": 1758360798935,
+            "level": "info",
+            "msg": "Pipeline started. Network=basecamp, maxIters=5, file=ContentRegistry.sol, strictArgs=true"
+          },
+          {
+            "t": 1758360798935,
+            "level": "info",
+            "msg": "Stage: generate -> prompt preparation"
+          },
+          {
+            "t": 1758360798935,
+            "level": "debug",
+            "msg": "Enhanced prompt length=2968"
+          },
+          {
+            "t": 1758360879790,
+            "level": "info",
+            "msg": "Generation done in 80855ms. Code size=20830"
+          },
+          {
+            "t": 1758360879790,
+            "level": "info",
+            "msg": "Stage: write -> preparing sandbox and files"
+          },
+          {
+            "t": 1758360879791,
+            "level": "info",
+            "msg": "Stage: compile -> starting compile/fix loop"
+          },
+          {
+            "t": 1758360882384,
+            "level": "error",
+            "msg": "CompilerError: Stack too deep. Try compiling with `--via-ir` (cli) or the equivalent `viaIR: true` (standard JSON) while enabling the optimizer. Otherwise, try removing local variables.\n   --> contracts/AI_ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b_ContentRegistry.sol:311:38:\n    |\n311 |         if (!hasRole(SUBMITTER_ROLE, submitter)) {\n    |                                      ^^^^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758360882394,
+            "level": "error",
+            "msg": "Error HH600: Compilation failed\n"
+          },
+          {
+            "t": 1758360882395,
+            "level": "info",
+            "msg": "\n"
+          },
+          {
+            "t": 1758360882395,
+            "level": "error",
+            "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+          },
+          {
+            "t": 1758360882418,
+            "level": "warn",
+            "msg": "Compile failed (iter 0). Running AI fix. Error length=1485"
+          },
+          {
+            "t": 1758360882418,
+            "level": "error",
+            "msg": "Pipeline failed: context is not defined"
+          }
+        ],
+        "step": "fix",
+        "lastErrors": "CompilerError: Stack too deep. Try compiling with `--via-ir` (cli) or the equivalent `viaIR: true` (standard JSON) while enabling the optimizer. Otherwise, try removing local variables.\n   --> contracts/AI_ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b_ContentRegistry.sol:311:38:\n    |\n311 |         if (!hasRole(SUBMITTER_ROLE, submitter)) {\n    |                                      ^^^^^^^^^\n\n\nError HH600: Compilation failed\nHardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n\n\n"
+      }
+    },
+    "logs_status_code": 200,
+    "status_status_code": 200
+  },
+  {
+    "job_id": "ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206",
+    "logs": {
+      "ok": true,
+      "data": {
+        "id": "ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206",
+        "count": 14,
+        "logs": [
+          {
+            "t": 1758360984705,
+            "level": "info",
+            "msg": "Pipeline started. Network=basecamp, maxIters=5, file=WhitelistRegistry.sol, strictArgs=true"
+          },
+          {
+            "t": 1758360984706,
+            "level": "info",
+            "msg": "Stage: generate -> prompt preparation"
+          },
+          {
+            "t": 1758360984706,
+            "level": "debug",
+            "msg": "Enhanced prompt length=2950"
+          },
+          {
+            "t": 1758361113939,
+            "level": "info",
+            "msg": "Generation done in 129233ms. Code size=20084"
+          },
+          {
+            "t": 1758361113939,
+            "level": "info",
+            "msg": "Stage: write -> preparing sandbox and files"
+          },
+          {
+            "t": 1758361113939,
+            "level": "info",
+            "msg": "Stage: compile -> starting compile/fix loop"
+          },
+          {
+            "t": 1758361115901,
+            "level": "error",
+            "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol\n\n\n"
+          },
+          {
+            "t": 1758361115901,
+            "level": "error",
+            "msg": "DeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:315:21:\n    |\n315 |                     nonces(req.artifactHash, msg.sender),\n    |                     ^^^^^^\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:324:17:\n    |\n324 |         require(nonces(req.artifactHash, signer) == req.nonce, \"EIP712: invalid nonce\");\n    |                 ^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758361115902,
+            "level": "error",
+            "msg": "DeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:326:9:\n    |\n326 |         _useNonce(req.artifactHash, signer);\n    |         ^^^^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758361115912,
+            "level": "error",
+            "msg": "Error HH600: Compilation failed\n"
+          },
+          {
+            "t": 1758361115913,
+            "level": "info",
+            "msg": "\n"
+          },
+          {
+            "t": 1758361115913,
+            "level": "error",
+            "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+          },
+          {
+            "t": 1758361115940,
+            "level": "warn",
+            "msg": "Compile failed (iter 0). Running AI fix. Error length=2212"
+          },
+          {
+            "t": 1758361115940,
+            "level": "error",
+            "msg": "Pipeline failed: context is not defined"
+          }
+        ]
+      }
+    },
+    "status": {
+      "ok": true,
+      "data": {
+        "id": "ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206",
+        "type": "ai_pipeline",
+        "state": "failed",
+        "progress": 100,
+        "createdAt": 1758360984705,
+        "updatedAt": 1758361115940,
+        "payload": {
+          "prompt": "WhitelistRegistry: EMPTY CONSTRUCTOR. owner add(address), remove(address). view isWhitelisted(address). Events: Added, Removed. No constructor args.",
+          "network": "basecamp",
+          "maxIters": 5,
+          "providedName": "",
+          "filename": "WhitelistRegistry.sol",
+          "constructorArgs": [],
+          "strictArgs": true
+        },
+        "result": null,
+        "error": "context is not defined",
+        "logs": [
+          {
+            "t": 1758360984705,
+            "level": "info",
+            "msg": "Pipeline started. Network=basecamp, maxIters=5, file=WhitelistRegistry.sol, strictArgs=true"
+          },
+          {
+            "t": 1758360984706,
+            "level": "info",
+            "msg": "Stage: generate -> prompt preparation"
+          },
+          {
+            "t": 1758360984706,
+            "level": "debug",
+            "msg": "Enhanced prompt length=2950"
+          },
+          {
+            "t": 1758361113939,
+            "level": "info",
+            "msg": "Generation done in 129233ms. Code size=20084"
+          },
+          {
+            "t": 1758361113939,
+            "level": "info",
+            "msg": "Stage: write -> preparing sandbox and files"
+          },
+          {
+            "t": 1758361113939,
+            "level": "info",
+            "msg": "Stage: compile -> starting compile/fix loop"
+          },
+          {
+            "t": 1758361115901,
+            "level": "error",
+            "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol\n\n\n"
+          },
+          {
+            "t": 1758361115901,
+            "level": "error",
+            "msg": "DeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:315:21:\n    |\n315 |                     nonces(req.artifactHash, msg.sender),\n    |                     ^^^^^^\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:324:17:\n    |\n324 |         require(nonces(req.artifactHash, signer) == req.nonce, \"EIP712: invalid nonce\");\n    |                 ^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758361115902,
+            "level": "error",
+            "msg": "DeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:326:9:\n    |\n326 |         _useNonce(req.artifactHash, signer);\n    |         ^^^^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758361115912,
+            "level": "error",
+            "msg": "Error HH600: Compilation failed\n"
+          },
+          {
+            "t": 1758361115913,
+            "level": "info",
+            "msg": "\n"
+          },
+          {
+            "t": 1758361115913,
+            "level": "error",
+            "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+          },
+          {
+            "t": 1758361115940,
+            "level": "warn",
+            "msg": "Compile failed (iter 0). Running AI fix. Error length=2212"
+          },
+          {
+            "t": 1758361115940,
+            "level": "error",
+            "msg": "Pipeline failed: context is not defined"
+          }
+        ],
+        "step": "fix",
+        "lastErrors": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:315:21:\n    |\n315 |                     nonces(req.artifactHash, msg.sender),\n    |                     ^^^^^^\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:324:17:\n    |\n324 |         require(nonces(req.artifactHash, signer) == req.nonce, \"EIP712: invalid nonce\");\n    |                 ^^^^^^\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:326:9:\n    |\n326 |         _useNonce(req.artifactHash, signer);\n    |         ^^^^^^^^^\n\n\nError HH600: Compilation failed\nHardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n\n\n"
+      }
+    },
+    "logs_status_code": 200,
+    "status_status_code": 200
+  },
+  {
+    "job_id": "ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905",
+    "logs": {
+      "ok": true,
+      "data": {
+        "id": "ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905",
+        "count": 13,
+        "logs": [
+          {
+            "t": 1758361435783,
+            "level": "info",
+            "msg": "Pipeline started. Network=basecamp, maxIters=5, file=SimpleLottery.sol, strictArgs=true"
+          },
+          {
+            "t": 1758361435783,
+            "level": "info",
+            "msg": "Stage: generate -> prompt preparation"
+          },
+          {
+            "t": 1758361435783,
+            "level": "debug",
+            "msg": "Enhanced prompt length=970"
+          },
+          {
+            "t": 1758361505796,
+            "level": "info",
+            "msg": "Generation done in 70013ms. Code size=5511"
+          },
+          {
+            "t": 1758361505796,
+            "level": "info",
+            "msg": "Stage: write -> preparing sandbox and files"
+          },
+          {
+            "t": 1758361505796,
+            "level": "info",
+            "msg": "Stage: compile -> starting compile/fix loop"
+          },
+          {
+            "t": 1758361507327,
+            "level": "error",
+            "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol\n\n\n"
+          },
+          {
+            "t": 1758361507327,
+            "level": "error",
+            "msg": "TypeError: Type address is not implicitly convertible to expected type address payable.\n   --> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol:115:18:\n    |\n115 |         winner = address(0);\n    |                  ^^^^^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758361507338,
+            "level": "error",
+            "msg": "Error HH600: Compilation failed\n"
+          },
+          {
+            "t": 1758361507339,
+            "level": "info",
+            "msg": "\n"
+          },
+          {
+            "t": 1758361507339,
+            "level": "error",
+            "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+          },
+          {
+            "t": 1758361507362,
+            "level": "warn",
+            "msg": "Compile failed (iter 0). Running AI fix. Error length=1729"
+          },
+          {
+            "t": 1758361507362,
+            "level": "error",
+            "msg": "Pipeline failed: context is not defined"
+          }
+        ]
+      }
+    },
+    "status": {
+      "ok": true,
+      "data": {
+        "id": "ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905",
+        "type": "ai_pipeline",
+        "state": "failed",
+        "progress": 100,
+        "createdAt": 1758361435782,
+        "updatedAt": 1758361507362,
+        "payload": {
+          "prompt": "SimpleLottery: EMPTY CONSTRUCTOR. buyTicket() payable. drawWinner() onlyOwner. winner claimPrize(). Events: TicketBought, WinnerDrawn, PrizeClaimed. No constructor args.",
+          "network": "basecamp",
+          "maxIters": 5,
+          "providedName": "",
+          "filename": "SimpleLottery.sol",
+          "constructorArgs": [],
+          "strictArgs": true
+        },
+        "result": null,
+        "error": "context is not defined",
+        "logs": [
+          {
+            "t": 1758361435783,
+            "level": "info",
+            "msg": "Pipeline started. Network=basecamp, maxIters=5, file=SimpleLottery.sol, strictArgs=true"
+          },
+          {
+            "t": 1758361435783,
+            "level": "info",
+            "msg": "Stage: generate -> prompt preparation"
+          },
+          {
+            "t": 1758361435783,
+            "level": "debug",
+            "msg": "Enhanced prompt length=970"
+          },
+          {
+            "t": 1758361505796,
+            "level": "info",
+            "msg": "Generation done in 70013ms. Code size=5511"
+          },
+          {
+            "t": 1758361505796,
+            "level": "info",
+            "msg": "Stage: write -> preparing sandbox and files"
+          },
+          {
+            "t": 1758361505796,
+            "level": "info",
+            "msg": "Stage: compile -> starting compile/fix loop"
+          },
+          {
+            "t": 1758361507327,
+            "level": "error",
+            "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol\n\n\n"
+          },
+          {
+            "t": 1758361507327,
+            "level": "error",
+            "msg": "TypeError: Type address is not implicitly convertible to expected type address payable.\n   --> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol:115:18:\n    |\n115 |         winner = address(0);\n    |                  ^^^^^^^^^^\n\n\n"
+          },
+          {
+            "t": 1758361507338,
+            "level": "error",
+            "msg": "Error HH600: Compilation failed\n"
+          },
+          {
+            "t": 1758361507339,
+            "level": "info",
+            "msg": "\n"
+          },
+          {
+            "t": 1758361507339,
+            "level": "error",
+            "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+          },
+          {
+            "t": 1758361507362,
+            "level": "warn",
+            "msg": "Compile failed (iter 0). Running AI fix. Error length=1729"
+          },
+          {
+            "t": 1758361507362,
+            "level": "error",
+            "msg": "Pipeline failed: context is not defined"
+          }
+        ],
+        "step": "fix",
+        "lastErrors": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol\n\n\nTypeError: Type address is not implicitly convertible to expected type address payable.\n   --> contracts/AI_ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905_SimpleLottery.sol:115:18:\n    |\n115 |         winner = address(0);\n    |                  ^^^^^^^^^^\n\n\nError HH600: Compilation failed\nHardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n\n\n"
+      }
+    },
+    "logs_status_code": 200,
+    "status_status_code": 200
+  }
+]

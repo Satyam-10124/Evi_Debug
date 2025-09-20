@@ -1,0 +1,278 @@
+[
+  {
+    "job_id": "ai_pipeline_d9de2314-d984-45b6-b130-2bc0d0886fa2",
+    "total_log_entries": 13,
+    "error_count": 5,
+    "warning_count": 1,
+    "last_error": "Pipeline failed: context is not defined",
+    "timeline": [
+      {
+        "timestamp": 1758360652800,
+        "level": "info",
+        "message": "Pipeline started. Network=basecamp, maxIters=5, file=BadgeRegistry.sol, strictArgs=true"
+      },
+      {
+        "timestamp": 1758360652801,
+        "level": "info",
+        "message": "Stage: generate -> prompt preparation"
+      },
+      {
+        "timestamp": 1758360794330,
+        "level": "info",
+        "message": "Generation done in 141529ms. Code size=20911"
+      },
+      {
+        "timestamp": 1758360794330,
+        "level": "info",
+        "message": "Stage: write -> preparing sandbox and files"
+      },
+      {
+        "timestamp": 1758360794330,
+        "level": "info",
+        "message": "Stage: compile -> starting compile/fix loop"
+      },
+      {
+        "timestamp": 1758360796139,
+        "level": "error",
+        "message": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a c..."
+      },
+      {
+        "timestamp": 1758360796140,
+        "level": "error",
+        "message": "TypeError: Function has override specified but does not override anything.\n   --> contracts/AI_ai_pi..."
+      },
+      {
+        "timestamp": 1758360796150,
+        "level": "error",
+        "message": "Error HH600: Compilation failed\n"
+      },
+      {
+        "timestamp": 1758360796151,
+        "level": "info",
+        "message": "\n"
+      },
+      {
+        "timestamp": 1758360796151,
+        "level": "error",
+        "message": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardha..."
+      },
+      {
+        "timestamp": 1758360796176,
+        "level": "warn",
+        "message": "Compile failed (iter 0). Running AI fix. Error length=3010"
+      },
+      {
+        "timestamp": 1758360796176,
+        "level": "error",
+        "message": "Pipeline failed: context is not defined"
+      }
+    ]
+  },
+  {
+    "job_id": "ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b",
+    "total_log_entries": 12,
+    "error_count": 4,
+    "warning_count": 1,
+    "last_error": "Pipeline failed: context is not defined",
+    "timeline": [
+      {
+        "timestamp": 1758360798935,
+        "level": "info",
+        "message": "Pipeline started. Network=basecamp, maxIters=5, file=ContentRegistry.sol, strictArgs=true"
+      },
+      {
+        "timestamp": 1758360798935,
+        "level": "info",
+        "message": "Stage: generate -> prompt preparation"
+      },
+      {
+        "timestamp": 1758360879790,
+        "level": "info",
+        "message": "Generation done in 80855ms. Code size=20830"
+      },
+      {
+        "timestamp": 1758360879790,
+        "level": "info",
+        "message": "Stage: write -> preparing sandbox and files"
+      },
+      {
+        "timestamp": 1758360879791,
+        "level": "info",
+        "message": "Stage: compile -> starting compile/fix loop"
+      },
+      {
+        "timestamp": 1758360882384,
+        "level": "error",
+        "message": "CompilerError: Stack too deep. Try compiling with `--via-ir` (cli) or the equivalent `viaIR: true` (..."
+      },
+      {
+        "timestamp": 1758360882394,
+        "level": "error",
+        "message": "Error HH600: Compilation failed\n"
+      },
+      {
+        "timestamp": 1758360882395,
+        "level": "info",
+        "message": "\n"
+      },
+      {
+        "timestamp": 1758360882395,
+        "level": "error",
+        "message": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardha..."
+      },
+      {
+        "timestamp": 1758360882418,
+        "level": "warn",
+        "message": "Compile failed (iter 0). Running AI fix. Error length=1485"
+      },
+      {
+        "timestamp": 1758360882418,
+        "level": "error",
+        "message": "Pipeline failed: context is not defined"
+      }
+    ]
+  },
+  {
+    "job_id": "ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206",
+    "total_log_entries": 14,
+    "error_count": 6,
+    "warning_count": 1,
+    "last_error": "Pipeline failed: context is not defined",
+    "timeline": [
+      {
+        "timestamp": 1758360984705,
+        "level": "info",
+        "message": "Pipeline started. Network=basecamp, maxIters=5, file=WhitelistRegistry.sol, strictArgs=true"
+      },
+      {
+        "timestamp": 1758360984706,
+        "level": "info",
+        "message": "Stage: generate -> prompt preparation"
+      },
+      {
+        "timestamp": 1758361113939,
+        "level": "info",
+        "message": "Generation done in 129233ms. Code size=20084"
+      },
+      {
+        "timestamp": 1758361113939,
+        "level": "info",
+        "message": "Stage: write -> preparing sandbox and files"
+      },
+      {
+        "timestamp": 1758361113939,
+        "level": "info",
+        "message": "Stage: compile -> starting compile/fix loop"
+      },
+      {
+        "timestamp": 1758361115901,
+        "level": "error",
+        "message": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a c..."
+      },
+      {
+        "timestamp": 1758361115901,
+        "level": "error",
+        "message": "DeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e60..."
+      },
+      {
+        "timestamp": 1758361115902,
+        "level": "error",
+        "message": "DeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e60..."
+      },
+      {
+        "timestamp": 1758361115912,
+        "level": "error",
+        "message": "Error HH600: Compilation failed\n"
+      },
+      {
+        "timestamp": 1758361115913,
+        "level": "info",
+        "message": "\n"
+      },
+      {
+        "timestamp": 1758361115913,
+        "level": "error",
+        "message": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardha..."
+      },
+      {
+        "timestamp": 1758361115940,
+        "level": "warn",
+        "message": "Compile failed (iter 0). Running AI fix. Error length=2212"
+      },
+      {
+        "timestamp": 1758361115940,
+        "level": "error",
+        "message": "Pipeline failed: context is not defined"
+      }
+    ]
+  },
+  {
+    "job_id": "ai_pipeline_9d3e8c13-7fde-4d5d-ae19-846fcf66a905",
+    "total_log_entries": 13,
+    "error_count": 5,
+    "warning_count": 1,
+    "last_error": "Pipeline failed: context is not defined",
+    "timeline": [
+      {
+        "timestamp": 1758361435783,
+        "level": "info",
+        "message": "Pipeline started. Network=basecamp, maxIters=5, file=SimpleLottery.sol, strictArgs=true"
+      },
+      {
+        "timestamp": 1758361435783,
+        "level": "info",
+        "message": "Stage: generate -> prompt preparation"
+      },
+      {
+        "timestamp": 1758361505796,
+        "level": "info",
+        "message": "Generation done in 70013ms. Code size=5511"
+      },
+      {
+        "timestamp": 1758361505796,
+        "level": "info",
+        "message": "Stage: write -> preparing sandbox and files"
+      },
+      {
+        "timestamp": 1758361505796,
+        "level": "info",
+        "message": "Stage: compile -> starting compile/fix loop"
+      },
+      {
+        "timestamp": 1758361507327,
+        "level": "error",
+        "message": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a c..."
+      },
+      {
+        "timestamp": 1758361507327,
+        "level": "error",
+        "message": "TypeError: Type address is not implicitly convertible to expected type address payable.\n   --> contr..."
+      },
+      {
+        "timestamp": 1758361507338,
+        "level": "error",
+        "message": "Error HH600: Compilation failed\n"
+      },
+      {
+        "timestamp": 1758361507339,
+        "level": "info",
+        "message": "\n"
+      },
+      {
+        "timestamp": 1758361507339,
+        "level": "error",
+        "message": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardha..."
+      },
+      {
+        "timestamp": 1758361507362,
+        "level": "warn",
+        "message": "Compile failed (iter 0). Running AI fix. Error length=1729"
+      },
+      {
+        "timestamp": 1758361507362,
+        "level": "error",
+        "message": "Pipeline failed: context is not defined"
+      }
+    ]
+  }
+]

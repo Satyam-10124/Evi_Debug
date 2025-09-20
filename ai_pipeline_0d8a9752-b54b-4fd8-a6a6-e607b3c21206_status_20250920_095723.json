@@ -1,0 +1,96 @@
+{
+  "ok": true,
+  "data": {
+    "id": "ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206",
+    "type": "ai_pipeline",
+    "state": "failed",
+    "progress": 100,
+    "createdAt": 1758360984705,
+    "updatedAt": 1758361115940,
+    "payload": {
+      "prompt": "WhitelistRegistry: EMPTY CONSTRUCTOR. owner add(address), remove(address). view isWhitelisted(address). Events: Added, Removed. No constructor args.",
+      "network": "basecamp",
+      "maxIters": 5,
+      "providedName": "",
+      "filename": "WhitelistRegistry.sol",
+      "constructorArgs": [],
+      "strictArgs": true
+    },
+    "result": null,
+    "error": "context is not defined",
+    "logs": [
+      {
+        "t": 1758360984705,
+        "level": "info",
+        "msg": "Pipeline started. Network=basecamp, maxIters=5, file=WhitelistRegistry.sol, strictArgs=true"
+      },
+      {
+        "t": 1758360984706,
+        "level": "info",
+        "msg": "Stage: generate -> prompt preparation"
+      },
+      {
+        "t": 1758360984706,
+        "level": "debug",
+        "msg": "Enhanced prompt length=2950"
+      },
+      {
+        "t": 1758361113939,
+        "level": "info",
+        "msg": "Generation done in 129233ms. Code size=20084"
+      },
+      {
+        "t": 1758361113939,
+        "level": "info",
+        "msg": "Stage: write -> preparing sandbox and files"
+      },
+      {
+        "t": 1758361113939,
+        "level": "info",
+        "msg": "Stage: compile -> starting compile/fix loop"
+      },
+      {
+        "t": 1758361115901,
+        "level": "error",
+        "msg": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol\n\n\n"
+      },
+      {
+        "t": 1758361115901,
+        "level": "error",
+        "msg": "DeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:315:21:\n    |\n315 |                     nonces(req.artifactHash, msg.sender),\n    |                     ^^^^^^\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:324:17:\n    |\n324 |         require(nonces(req.artifactHash, signer) == req.nonce, \"EIP712: invalid nonce\");\n    |                 ^^^^^^\n\n\n"
+      },
+      {
+        "t": 1758361115902,
+        "level": "error",
+        "msg": "DeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:326:9:\n    |\n326 |         _useNonce(req.artifactHash, signer);\n    |         ^^^^^^^^^\n\n\n"
+      },
+      {
+        "t": 1758361115912,
+        "level": "error",
+        "msg": "Error HH600: Compilation failed\n"
+      },
+      {
+        "t": 1758361115913,
+        "level": "info",
+        "msg": "\n"
+      },
+      {
+        "t": 1758361115913,
+        "level": "error",
+        "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+      },
+      {
+        "t": 1758361115940,
+        "level": "warn",
+        "msg": "Compile failed (iter 0). Running AI fix. Error length=2212"
+      },
+      {
+        "t": 1758361115940,
+        "level": "error",
+        "msg": "Pipeline failed: context is not defined"
+      }
+    ],
+    "step": "fix",
+    "lastErrors": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:315:21:\n    |\n315 |                     nonces(req.artifactHash, msg.sender),\n    |                     ^^^^^^\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:324:17:\n    |\n324 |         require(nonces(req.artifactHash, signer) == req.nonce, \"EIP712: invalid nonce\");\n    |                 ^^^^^^\n\n\nDeclarationError: Undeclared identifier.\n   --> contracts/AI_ai_pipeline_0d8a9752-b54b-4fd8-a6a6-e607b3c21206_WhitelistRegistry.sol:326:9:\n    |\n326 |         _useNonce(req.artifactHash, signer);\n    |         ^^^^^^^^^\n\n\nError HH600: Compilation failed\nHardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n\n\n"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "data": {
+    "id": "ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b",
+    "type": "ai_pipeline",
+    "state": "failed",
+    "progress": 100,
+    "createdAt": 1758360798935,
+    "updatedAt": 1758360882418,
+    "payload": {
+      "prompt": "ContentRegistry: EMPTY CONSTRUCTOR. registerContent(bytes32 hash,string uri). updateContent(uint256 id,string newUri). Events: Registered, Updated. No constructor args.",
+      "network": "basecamp",
+      "maxIters": 5,
+      "providedName": "",
+      "filename": "ContentRegistry.sol",
+      "constructorArgs": [],
+      "strictArgs": true
+    },
+    "result": null,
+    "error": "context is not defined",
+    "logs": [
+      {
+        "t": 1758360798935,
+        "level": "info",
+        "msg": "Pipeline started. Network=basecamp, maxIters=5, file=ContentRegistry.sol, strictArgs=true"
+      },
+      {
+        "t": 1758360798935,
+        "level": "info",
+        "msg": "Stage: generate -> prompt preparation"
+      },
+      {
+        "t": 1758360798935,
+        "level": "debug",
+        "msg": "Enhanced prompt length=2968"
+      },
+      {
+        "t": 1758360879790,
+        "level": "info",
+        "msg": "Generation done in 80855ms. Code size=20830"
+      },
+      {
+        "t": 1758360879790,
+        "level": "info",
+        "msg": "Stage: write -> preparing sandbox and files"
+      },
+      {
+        "t": 1758360879791,
+        "level": "info",
+        "msg": "Stage: compile -> starting compile/fix loop"
+      },
+      {
+        "t": 1758360882384,
+        "level": "error",
+        "msg": "CompilerError: Stack too deep. Try compiling with `--via-ir` (cli) or the equivalent `viaIR: true` (standard JSON) while enabling the optimizer. Otherwise, try removing local variables.\n   --> contracts/AI_ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b_ContentRegistry.sol:311:38:\n    |\n311 |         if (!hasRole(SUBMITTER_ROLE, submitter)) {\n    |                                      ^^^^^^^^^\n\n\n"
+      },
+      {
+        "t": 1758360882394,
+        "level": "error",
+        "msg": "Error HH600: Compilation failed\n"
+      },
+      {
+        "t": 1758360882395,
+        "level": "info",
+        "msg": "\n"
+      },
+      {
+        "t": 1758360882395,
+        "level": "error",
+        "msg": "HardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n"
+      },
+      {
+        "t": 1758360882418,
+        "level": "warn",
+        "msg": "Compile failed (iter 0). Running AI fix. Error length=1485"
+      },
+      {
+        "t": 1758360882418,
+        "level": "error",
+        "msg": "Pipeline failed: context is not defined"
+      }
+    ],
+    "step": "fix",
+    "lastErrors": "CompilerError: Stack too deep. Try compiling with `--via-ir` (cli) or the equivalent `viaIR: true` (standard JSON) while enabling the optimizer. Otherwise, try removing local variables.\n   --> contracts/AI_ai_pipeline_b8c58f70-7f3d-4e4b-96c1-cad82372af3b_ContentRegistry.sol:311:38:\n    |\n311 |         if (!hasRole(SUBMITTER_ROLE, submitter)) {\n    |                                      ^^^^^^^^^\n\n\nError HH600: Compilation failed\nHardhatError: HH600: Compilation failed\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:504:15)\n    at processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at OverriddenTaskDefinition._action (/app/node_modules/@typechain/hardhat/src/index.ts:28:30)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1433:63)\n    at Environment._runTaskDefinition (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:351:14)\n    at Environment.run (/app/node_modules/hardhat/src/internal/core/runtime-environment.ts:184:14)\n    at SimpleTaskDefinition.action (/app/node_modules/hardhat/src/builtin-tasks/compile.ts:1513:7)\n\n\n"
+  }
+}
